@@ -1,3 +1,14 @@
+## Install(if missing)
+```bash
+sudo apt-get install libglfw3-dev
+sudo apt-get install libglew-dev
+sudo apt-get install libgl1-mesa-dev
+sudo apt-get install libglu1-mesa-dev
+sudo apt-get install build-essential
+sudo apt-get install cmake
+
+```
+
 ## Configure
 
 ```bash
@@ -36,3 +47,8 @@ rm -rf build
 
 ./c
 ```
+
+
+## Images
+![Teapot](images/teapot.png)
+![Bunny](images/bunny.png)

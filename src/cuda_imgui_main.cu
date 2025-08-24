@@ -102,10 +102,10 @@ void mouse_callback(GLFWwindow* /*window*/, double xpos, double ypos) {
         float dx = static_cast<float>(xpos - last_mouse_x);
         float dy = static_cast<float>(ypos - last_mouse_y);
 
-        // Natural orbit: drag right -> rotate right; drag up -> look up
+       
         const float sensitivity = 0.35f; // deg per pixel (snappy but smooth)
         yaw_deg   += dx * sensitivity;
-        pitch_deg += dy * sensitivity;
+        pitch_deg -= dy * sensitivity;
 
         // Clamp pitch to avoid flipping
         if (pitch_deg > 89.0f)  pitch_deg = 89.0f;
